@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14pt;
+    padding-top: 90px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: linear-gradient(to right, #1a1a1a, #333) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem;
+}
+
+.navbar img {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #96c93d !important;
+    transform: translateY(-2px);
+}
+
+.dropdown-item {
+    color: #337ab7 !important;
+    font-size: 0.8vw;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+    color: #fff !important;
+    background-color: #337ab7;
+}
+
+#content {
+    margin: 2rem 0;
+}
+
+.container-fluid {
+    padding: 0 2rem;
+}
+
+.row .col-md-2 .sidebar,
+.accordion-button {
+    border: 2px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.sidebar {
+    border: 2px solid #dfdfdf;
+    background-color: #f7f7f7;
+    padding: 5px;
+}
+
+.accordion-button {
+    font-size: 1.3vw;
+}
+
+.accordion-body table td:hover {
+    background-color: antiquewhite;
+}
+
+.accordion-body {
+    padding: 0px;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table td {
+    border-top: none;
+    border-bottom: 1px solid #dee2e6;
+    padding-left: 2rem;
+    font-size: 0.8vw;
+}
+
+td>em {
+    margin-right: 5px;
+}
+
+#aboutme {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+#aboutme h3 {
+    color: #fff;
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+#aboutme i {
+
+    margin-bottom: 1rem;
+}
+
+#aboutme div {
+    line-height: 1.8;
+}
+
+#last-data {
+    background-color: #2c2c2c;
+    padding: 2rem 0;
+}
+
+#last-data h6 {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.section-container {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.section-container.limited-time {
+    background: #ffe6e6;
+    border-left: 5px solid #dc3545;
+}
+
+.section-container.popular {
+    background: #fff7e6;
+    border-left: 5px solid #ffc107;
+}
+
+.section-container.new-arrival {
+    background: #e6f7ff;
+    border-left: 5px solid #0dcaf0;
+}
+
+/* 自定義輪播按鈕樣式 */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* 確保卡片容器不會被按鈕遮擋 */
+.carousel .row {
+    margin: 0 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    /* 平滑過渡效果 */
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* 特別設定 LINE 圖標的顏色 */
+.fa-line {
+    color: #00b900;
+}
+
+/* 特別設定 Facebook 圖標的顏色 */
+.fa-facebook {
+    color: #1877f2;
+}
+
+/* 特別設定 Instagram 圖標的顏色 */
+.fa-instagram {
+    color: #e4405f;
+}
+
+/* 隱藏商品的樣式 */
+.hidden {
+    display: none !important;
+}
+
+/* Accordion */
+.accordion-item {
+    border: none;
+    /* Remove default border */
+    margin-bottom: 10px;
+    /* Add spacing between items */
+    border-radius: 8px;
+    /* Rounded corners */
+    background: #ffffff;
+    /* White background for accordion items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.accordion-header {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.accordion-button {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: none;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+}
+
+.accordion-button i {
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.accordion-collapse {
+    background-color: #f8f9fa;
+    /* Consistent background color */
+}
+
+.accordion-body {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #ffffff;
+    /* White background */
+    border: 1px solid #e9ecef;
+    /* Light border */
+    border-top: none;
+    /* Avoid double border with header */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #ffffff;
+    /* White dropdown background */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.dropdown-item {
+    color: #212529;
+    /* Dark text */
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+/* Table */
+.table {
+    margin-bottom: 0;
+    /* Remove default bottom margin */
+    background-color: transparent;
+    /* Transparent table background */
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+    /* Light border between rows */
+}
+
+.table td a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #007bff;
+    /* Primary color for links */
+    font-weight: 500;
+}
+
+.table td a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+    color: #0056b3;
+    /* Darker blue */
+}
+
+/* Scrollbar customization */
+.col-md-2::-webkit-scrollbar {
+    width: 6px;
+}
+
+.col-md-2::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    /* Blue scrollbar thumb */
+    border-radius: 10px;
+}
+
+.col-md-2::-webkit-scrollbar-track {
+    background-color: #e9ecef;
+    /* Light track */
+}
+
+.dropdown-menu-left {
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 1050;
+    display: none;
+    /* 預設隱藏 */
+}
+
+.dropdown:hover .dropdown-menu-left {
+    display: block;
+    /* 滑鼠懸停時顯示 */
+}
+
+.dropdown-menu-left .dropdown-item {
+    white-space: nowrap;
+    /* 確保文字不換行 */
+}
+
+
+.text-ellipsis {
+    display: -webkit-box;
+    /* 必須設置為盒模型 */
+    -webkit-line-clamp: 2;
+    /* 限制顯示行數 */
+    -webkit-box-orient: vertical;
+    /* 垂直排列子元素 */
+    overflow: hidden;
+    /* 隱藏超出的文字 */
+    text-overflow: ellipsis;
+    /* 添加省略號 */
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* 預設隱藏下拉選單 */
+.nav-item .dropdown-menu {
+    display: none;
+    /* 隱藏選單 */
+    position: absolute;
+    /* 確保選單定位 */
+    top: 100%;
+    /* 向下顯示，緊貼按鈕 */
+    left: 0;
+    /* 對齊左側 */
+    z-index: 1050;
+    /* 確保層級較高 */
+    margin-top: 0.5rem;
+    /* 添加間距 */
+}
+
+/* 滑鼠懸停時顯示選單 */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    /* 顯示選單 */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card.text-center.mt-3 img {
+    opacity: 1;
+    transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+}
+
+.card.text-center.mt-3 img:hover {
+    opacity: 0.5;
+    border: #e600a0 1px solid;
+
+}
+
+/* 限時特價區樣式 */
+.limited-time {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 倒計時容器 */
+.countdown-timer {
+    display: flex;
+    align-items: center;
+}
+
+/* 倒計時文字 */
+.countdown-label {
+    font-size: 1.5em;
+    color: #6c757d;
+    /* 灰色文字 */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* 時間部分的框 */
+.time-box {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dc3545;
+    /* 紅色文字 */
+    background-color: #f8f9fa;
+    /* 灰底 */
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    /* 調整間距 */
+}
+
+.card-trans {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-trans:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.col-md-10 nav {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.card .row.mt-2 .col-md-4 a>img:hover {
+    border: #e600a0 1px solid;
+}
+
+.color_e600a0 {
+    color: #e600a0;
+}
+
+.color-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.badge.text-bg-info {
+    font-size: 40%;
+    color: #fff !important;
+}
+
+.color_red {
+    color: red;
+}
+
+.table-responsive-md table th,
+.table-responsive-md table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-responsive-md table tfoot td {
+    text-align: center;
+}
+
+.table-responsive-md table tr:hover {
+    background-color: rgba(152, 214, 245, 0.3);
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* 響應式設計優化 */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem !important;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer 樣式優化 */
+#footer {
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
